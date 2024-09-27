@@ -1,0 +1,17 @@
+:: StoryData
+{
+  "ifid": "F9678B0C-78C2-4851-887A-AB624A976181",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "Start",
+  "zoom": 1
+}
+
+:: StoryTitle
+土味情书2024
+
+:: StoryInit
+<<run UIBar.destroy()>>
+
+:: Start
+Test

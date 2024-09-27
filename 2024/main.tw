@@ -8,7 +8,7 @@
 }
 
 :: StoryTitle
-土味情书2024
+CLL 2024
 
 :: StoryInit
 <<run UIBar.destroy()>>

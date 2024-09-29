@@ -11,21 +11,41 @@
 CLL 2024
 
 :: StoryInit
-<<run UIBar.destroy()>>
+<<script>>
+UIBar.destroy();
+Config.saves.maxAutoSaves = 1;
+Config.saves.isAllowed = function (saveType) {
+  return true;
+}
+<</script>>
 
 :: Start
+<<nobr>>
+  <<script>>
+  if (Save.browser.size > 0) {
+  	Save.browser.continue()
+  		.catch(error => {
+  			console.error(error);
+  			UI.alert(error);
+  		});
+  }
+  else {
+  	/* No browser saves exist. */
+  	console.log("No browser saves exist.");
+  }
+  <</script>>
+<</nobr>>
+<<goto "0">>
 
+:: 0
+<<set $correct = 0>>
 枕边传来规律的震动。
-
 你眯着眼，熟练地划掉手机闹铃。
-
 鸟儿轻鸣，卧室被蒙蒙的光照得微亮。
+你轻轻坐起，一封信静静地躺在你的被子上。
 
-琪琪的小脑袋正贴着你的肩，传来均匀的呼吸声。
+<span class="mail">To：亲爱的小慧慧</span>
 
-但小5似乎不在。
+信封上是小5那丑丑的字迹。
 
-你轻轻坐了起来，没有把小家伙弄醒。
-
-[[【继 续】|bedroom]]
-
+[[【继 续】|1]]

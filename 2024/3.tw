@@ -1,0 +1,35 @@
+:: 3
+
+依然是信的后续。
+
+<span class="mail">虽说要写“信”，但一下子还真不知道该从何开始。我不想写琪琪，但最近这一两年里，还有多少独属于我们两个人的事情呢？我想了老半天才想起了一件，是我们一起去看了■■■。百度一下，发现那竟然也已经是两年前的事了。</span>
+
+“吱！”
+小鸡不知道什么时候走出了卧室。你跟随它来到次卧，发现五斗柜上放了两张电影票。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【阿凡达】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你把阿凡达的电影票拿了起来，发现它是一截信纸的背面。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|4]]
+      <</replace>>
+    <</link>>
+    <<link "【阿丽塔】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，看阿丽塔已经是19年的事情了。你把阿凡达的电影票拿了起来，发现它是一截信纸的背面。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|4]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

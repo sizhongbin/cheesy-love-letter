@@ -1,0 +1,24 @@
+:: 8
+
+暖黄色的灯光打在客厅的墙上，投影出信的下一段。
+
+<span class="mail">记得当时把月球灯送给你的时候，我还给你写了第一封信。说出来你可能不信，那封信是我的“双重保险”，因为我真的很不会送■■……我已经记不起那封信的内容了，但我很清楚的记得，当时你说你喜欢。正好快到你的生日了，希望这一次，你也能喜欢。</span>
+
+文字底下还有一个小小的礼物图标，一动一动的，像是怕你看不见。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【礼物】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你用手指点了一下礼物图标，它绽开了一道有点炫目的光。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 90>>
+      <<replace "#next" t8n>>
+        [[【继 续】|9]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

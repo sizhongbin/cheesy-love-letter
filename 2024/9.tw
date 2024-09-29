@@ -1,0 +1,40 @@
+:: 9
+
+光芒散尽时，家里的一切都恢复了原样，除了你手中多出来的最后一截信纸。
+
+<span class="mail">最后，让我看看小慧慧解谜解得怎么样……<<if $correct gt 94>>哇！小慧慧果然是最棒的！给你A+！<<else>>嗯！小慧慧果然是棒棒的！给你个A！<</if>></span>
+
+<span class="mail">那么，作为通关奖励，让我再告诉你几件事情吧～</span>
+<span class="mail">一、这是游戏，不是考试。所以你最低也能拿到A！我说了算！（得意.gif）</span>
+<span class="mail">二、你有注意到背景色的黑吗？它的颜色代码是#190518。（机智.gif）</span>
+<span class="mail">三、游戏当然要有彩蛋。它就在这一页里。你能找到它吗？（让我看看.gif）</span>
+<span class="mail">四、这个游戏项目的名字叫C(heesy)L(ove)L(etter)，土味情书。（尴尬.gif）</span>
+
+[[【重新开始】|Start]]
+
+<<run console.log(State.getVar("$correct"))>>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="mail">五、爱你。</span>
+<span class="mail">From：有点小调皮的小5</span>

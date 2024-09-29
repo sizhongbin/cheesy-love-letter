@@ -1,0 +1,36 @@
+:: 1
+
+信没有封口。你取出信纸阅读起来，却发现只有开头的一段。
+
+<span class="mail">很久没有给你写信了。住在一起后，我时不时会想应该怎么给你写信。因为，如果还像以前那样亲手把信交给你，总感觉很奇怪。最近，在填我的游戏坑时，我灵机一动，为何不试试用“程序员”的方法来写？毕竟，除了游戏和■■之外，编程也是我的一大爱好。这很有我的风格，不是吗？</span>
+
+文字就到此为止，信纸的底部有被撕开的痕迹。
+你抬起头，发现了两件不该被放在卧室里的乐器。
+你猜测，信中的■■，以及信的后续，大概和这两件乐器有关。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【吉他】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你仔细检查了小5的吉他，从琴箱里取出了一截信纸。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|2]]
+      <</replace>>
+    <</link>>
+    <<link "【口琴】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，小5的爱好是吉他。你仔细检查了小5的吉他，从琴箱里取出了一截信纸。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|2]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

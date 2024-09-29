@@ -1,0 +1,35 @@
+:: 2
+
+不出所料，这是信的后续。
+
+<span class="mail">说干就干，我用代码制作了这片游戏空间。在这里，除了你以外，没有其他人存在。我可以不尴尬地“投递”我的“信”，你也可以安静地阅读。顺便，也陪我玩玩幼稚的解谜小游戏。放心啦，以我们的默契，这些问题比你每天养■■答题还简单。</span>
+
+信纸的底部依然有被撕开的痕迹，似乎仍有下文。
+在你的脚边，两只你亲手用钩针制作的公仔正笨拙地吸引着你的关注。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【狮子】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，你每天养的是一只原味鸡。你把小鸡捧了起来，一截信纸贴在了它胖胖的肚子上。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|3]]
+      <</replace>>
+    <</link>>
+    <<link "【小鸡】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你把小鸡捧了起来，一截信纸贴在了它胖胖的肚子上。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|3]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

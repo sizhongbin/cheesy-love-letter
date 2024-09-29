@@ -1,0 +1,34 @@
+:: 7
+
+箱子里有好几样东西，你先把一截信纸取了出来。
+
+<span class="mail">这样的一封“信”，你喜欢吗？它将成为全人类所产生的几百万亿GB数据中渺小的一隅，被小心地备份着，直到世界末日。它确实在网络上存在，却没什么人能发现它的存在，也没有别人能读懂它的意义，只有我们可以。希望它不会成为另一件■■■，为我再增一道黑历史吧。</span>
+
+箱子里还有另外两件东西，都是小5曾经送给你的礼物。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【月球灯】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你刚触碰到月球灯，它就自己亮了起来。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|8]]
+      <</replace>>
+    <</link>>
+    <<link "【暖手宝】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，要说黑历史的话，当然是这玩意儿。你刚触碰到月球灯，它就自己亮了起来。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|8]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

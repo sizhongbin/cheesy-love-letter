@@ -1,0 +1,36 @@
+:: 5
+
+“大头贴”的背后是下一段文字。
+
+<span class="mail">我这么执着于“我们两个人”，你会不会觉得很奇怪？但我猜，在这方面，我们应该是可以互相理解的。毕竟，你是那么的喜欢我们一家三口一起画的那只■■，而理由是因为它的颜色很像我们当时去的艺术展，还有它的独一无二。</span>
+
+客厅似乎传来了动静。
+你走出次卧。
+走廊上，一只色彩斑斓的小猫和一只胖胖的小狗正静静地看着你。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【小猫】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你接近小猫，它窜进了餐桌底下，为你衔来了一截信纸。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|6]]
+      <</replace>>
+    <</link>>
+    <<link "【小狗】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，这小狗是小5以前送的储钱罐。你接近小猫，它窜进了餐桌底下，为你衔来了一截信纸。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|6]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>

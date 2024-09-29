@@ -1,0 +1,35 @@
+:: 6
+
+你盯着看了小猫好一阵子，才接过信纸，继续阅读。
+
+<span class="mail">我也很喜欢这种感觉。以后还会有越来越多的事物，能被“我们两个人”一起，赋予“独一无二”的意义。就像■■这个数字一样，它没有被别人贴上世俗的标签，只因为我们相遇、结合，才产生了只属于我们的意义。我觉得这很浪漫。</span>
+
+客厅的茶几上，有一只小小的箱子。
+它被一个两位的密码锁锁着。
+
+<<nobr>>
+  <span id="choice">
+    <<link "【12】">>
+      <<replace "#choice" t8n>>
+        <span class="incorrect">
+        不对，和小5的相遇、结婚，都是在18号。你解开了密码锁，把箱子打开。
+        </span>
+      <</replace>>
+      <<replace "#next" t8n>>
+        [[【继 续】|7]]
+      <</replace>>
+    <</link>>
+    <<link "【18】">>
+      <<replace "#choice" t8n>>
+        <span class="correct">你解开了密码锁，把箱子打开。
+        </span>
+      <</replace>>
+      <<set $correct to $correct + 1>>
+      <<replace "#next" t8n>>
+        [[【继 续】|7]]
+      <</replace>>
+    <</link>>
+  </span>
+<</nobr>>
+
+<span id="next"></span>
